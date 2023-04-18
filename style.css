@@ -1,0 +1,73 @@
+.bloco1 {
+    background-color: lightgrey;
+    height: 150px;
+    width: 150px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco2 {
+    background-color: darkgrey;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco3 {
+    background-color: grey;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerRow {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.containerRowReverse {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.containerColumn {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.containerColumnReverse {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
