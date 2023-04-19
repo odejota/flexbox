@@ -1,7 +1,23 @@
-body h1 {
+body {
+    margin: 0;
+}
+
+body h2, h3 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.navbar {
+    background-color: black;
+    padding: 0.1%;
+    /* flex: 1; */
     text-align: center;
+    margin: auto;
+}
+
+.navbar h1 {
     text-decoration: overline underline;
-    color: rgb(39, 39, 39);
+    color: white;
 }
 
 .bloco1 {
