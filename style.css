@@ -1,16 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
 body {
     margin: 0;
 }
 
-body h2, h3 {
+body p, h2, h3 {
     margin-left: 2%;
     margin-right: 2%;
+}
+
+body h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+body h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+body h3 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+body p {
+    font-family: 'Maven Pro', sans-serif;
+    color: brown;
 }
 
 .navbar {
     background-color: black;
     padding: 0.1%;
-    /* flex: 1; */
     text-align: center;
     margin: auto;
 }
@@ -18,6 +42,33 @@ body h2, h3 {
 .navbar h1 {
     text-decoration: overline underline;
     color: white;
+}
+
+.subnav {
+    background-color: rgb(187, 187, 187);
+    font-family: 'Maven Pro', sans-serif;
+    padding: 0.1%;
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+
+.subnav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subnav ul li {
+    align-items: center;
+}
+
+.subnav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
 }
 
 .bloco1 {
@@ -53,6 +104,85 @@ body h2, h3 {
     width: 150px;
     text-align: center;
     font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.bloco1noSpace {
+    background-color: lightgrey;
+    width: 150px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.bloco2noSpace {
+    background-color: darkgrey;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.bloco3noSpace {
+    background-color: grey;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.bloco1baseline {
+    background-color: lightgrey;
+    height: 150px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.bloco2baseline {
+    background-color: darkgrey;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+.bloco3baseline {
+    background-color: grey;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 100px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 20px;
     display: flex;
@@ -199,4 +329,64 @@ body h2, h3 {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
+}
+
+.containerAlignItemsBaseline {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.containerFxWrapNoWrap {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.containerFxWrapWrap {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerFxWrapWrapRev {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.containerFxFlowRowNoWrap {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: auto;
+
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row nowrap;
 }
