@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    /*rolagem suave ao clique de atalhos*/
+}
+
 body {
     margin: 0;
 }
 
-body p, h2, h3 {
+body p,
+h2,
+h3 {
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -37,6 +44,10 @@ body p {
     padding: 0.1%;
     text-align: center;
     margin: auto;
+
+    /* position: fixed;
+    width: 100vw;
+    top: 0; */
 }
 
 .navbar h1 {
@@ -68,6 +79,27 @@ body p {
     text-decoration: none;
     display: flex;
     align-items: center;
+    color: black;
+}
+
+#upBtn {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.308);
+    margin: 3vw;
+    float: right;
+    position: absolute;
+    z-index: 9999;
+}
+
+#upBtn.visible {
+    visibility: visible;
+}
+
+#upBtn a {
+    text-decoration: none;
     color: black;
 }
 
@@ -389,4 +421,64 @@ body p {
     align-items: center;
     /* flex-wrap: wrap-reverse; */
     flex-flow: row nowrap;
+}
+
+.containerAlignContCenter {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.containerAlignContFxStart {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.containerAlignContFxEnd {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.containerAlignContSpAround {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.containerAlignContSpBetween {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.containerAlignContSpEvenly {
+    background-color: rgb(39, 39, 39);
+    padding: 16px;
+    height: 500px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
 }
